@@ -1,0 +1,55 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.flexbox{
+    background-color: aqua;
+    height: 200px;
+    display: flex;/*convierte al elemento en una caja flexible*/
+    flex-direction: row;/*determina en que direccion se mostraran los elementos de la caja*/
+    flex-wrap: wrap;/*determina si los elementos usaran una nueva linea o no al quedarse sin espacio*/
+    /*las propiedades flex-direction y wrap pueden agruparse en "flex-flow: [direction] [wrap]"
+        los valores por defecto son:
+        wrap:nowrap (nowrap,wrap,wrap-reverse)
+        direction:row (row,row-reverse,column,column-reverse)*/
+    justify-content: space-evenly;/*determina como se distribuira el espacio sobrante del contenedor*/
+    align-items:center; /*lo mismo que la linea de arriba, pero con el eje secundario*/
+    align-content: center ; /*similar a "align-items" pero con filas de elementos*/
+    /*los valores por defecto son:
+        justify.content:flex-start (center,flex-start,flex-end,space-around,space-betwen,space-evenly)
+        align-items:strech (center,flex-stert,flex-end,strech,baseline)
+        align-content:strech (vease:justify-content,strech)
+    */
+}
+.flexitem {
+    display: inline-flex;
+    font-size: 30px;
+    background-color: #f00;
+    border-radius: 10px;
+/*===================================================================================*/
+    order: 1;/*determina el orden de uno o mas elementos, a MENOR sea el valor, antes va a
+                posicionarse el elemento. defecto:0 (todos los numeros enteros)*/
+    flex-grow: 1; /*determina cuanto va a expandirse un elemento por el espacio disponible en el eje principal*/
+    /*funciona del siguiente modo:
+        digamos que tienes 3 elementos (1, 2 y 3), todos tienen un grow de 1 excepto 3, que
+        tiene un grow de 3, si se libera espacio en la pagina, el tres ocupara el 60%
+        porque de las cinco partes de grow, ese es el porcentaje que aporta.
+        defecto:display:0 (todos los numeros enteros)*/
+    flex-shrink: 1;/*determina cuanto va a encogerse un elemento en el eje principal*/
+    /*funciona del mismo modo que grow, pero actua cuando el espacio  se reduce
+    defecto:0 (todos los numeros enteros)*/
+    flex-basis: 110px;/*le da un largo inicial al elemento. defecto:automatico (todos los numeros naturales)*/
+    /*en adicion, las tres propiedades recien mencionadas pueden agruparse en la propiedad
+    "flex" con la siguiente sintaxis: "flex:[grow] [shrink] [basis]"*/
+    align-self:auto;/*sobrescribe la propiedad impuesta por el "align-items" del elemento padre*/
+    /*por defecto:auto (vease align-items)*/
+
+}
+
+#ultimo{
+    background-color: #a00;
+    order: 0;
+    flex-grow: 3;
+    flex-shrink: 3;
+    flex-basis: 130px;
+}

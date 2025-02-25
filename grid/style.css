@@ -1,0 +1,80 @@
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.gridContainer{
+    display: grid; /*convierte al elemento en una cuadricula*/
+    row-gap: 6px; /*establece el espacio entre filas*/
+    column-gap: 6px; /*establece el espacio entre columnas*/
+    /*para los gaps el valor por defecto es 0 e incluyen todos los naturales*/
+
+    margin: auto;
+    background-color: #fa1;
+
+    width: 620px;
+    height: 620px;
+    padding: 10px;
+
+    grid-template-columns: 2fr repeat(2, 1fr); /*establece el prototipo para las columnas*/
+    grid-template-rows: 2fr repeat(2,1fr); /*establece el prototipo para las filas*/
+    /*los parametros dados en este caso no son medidas normales:
+        fr:es una medida especifica de "grid layout". mas que determinar cantidades exactas
+        determina como se expandira la columna/fila por el espacio disponible (similar a flex-grow)
+        repeat:una de las principales y escasas funciones del lenguaje CSS, el primer parametro es
+        la cantidad de veces que repetira un termino y el segundo es el termino en si
+    */
+
+
+}
+.gridItems{
+    background-color: #4cf;
+}
+
+.divisor{
+
+    height: 200px;
+
+}
+
+.dividido{
+
+    display: grid;
+    width: 620px;
+    height: 620px;
+
+    margin: auto;
+    padding: 10px;
+    background-color: #f33;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 6px;
+    
+}
+
+.areas{
+
+    background-color: #999;
+}
+
+#principal{
+    grid-row-start: 1; /*determina en que fila comenzara*/
+    grid-row-end: 3; /*determina en que fila terminara*/
+    grid-column-start: 1; /*determina en que columna comenzara*/
+    grid-column-end: 3; /*determina en que columna terminara*/
+}
+#horizontal{
+    grid-column: 1 /span 2;
+}
+#vertical{
+    grid-row: 1 / span 2;
+}
+#inferior{
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 4;
+}
+#lateral{
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 3;
+}
