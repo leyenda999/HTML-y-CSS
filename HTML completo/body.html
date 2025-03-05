@@ -5,14 +5,17 @@
     <link rel="icon" href="favicon-32x32.png">
 </head>
 <body> <!--la parte visible del documento-->
-    <div class="areaDeTexto"> <!--crea una division dentro del contenido-->    
-        <h1>documentacion de html</h1>  <!--el encabezado mas importante-->
-        <h2>repaso de las etiquetas del cuerpo</h2>  <!--un encabezado algo menos importante-->
-        <h3>comentado con propositos didacticos</h3>  <!--encabezados de importancia media, usualmente subtitulos-->
-        <h4>a raiz del curso de "soy dalto"</h4>  <!--encabezados de importancia media, usualmente subtitulos-->
-        <h5>por nicolas griglio</h5>  <!--encabezados de minima importancia-->
-        <h6>2009 - ???? (esperemos almenos 60 años)</h6>  <!--encabezados de minima importancia-->
-
+    <div class="areaDeTexto" id="primero"> <!--crea una division dentro del contenido-->
+        <header>encabezado</header> <!--crea un encabezado-->
+        <nav>barra de navegacion</nav> <!--crea una barra de navegacion-->
+        <h1>documentacion de html</h1>  <!--el titulo mas importante-->
+        <h2>repaso de las etiquetas del cuerpo</h2>  <!--un titulo algo menos importante-->
+        <h3>comentado con propositos didacticos</h3>  <!--titulos de importancia media, usualmente subtitulos-->
+        <h4>a raiz del curso de "soy dalto"</h4>  <!--titulos de importancia media, usualmente subtitulos-->
+        <h5>por nicolas griglio</h5>  <!--titulos de minima importancia-->
+        <h6>2009 - ???? (esperemos almenos 60 años)</h6>  <!--titulos de minima importancia-->
+        
+        <p>una palabra de este texto esta<span> resaltada</span><!--resalta una parte de un texto--></p>
         <p>parrafo regular.</p> <!--parrafo comun-->
         <pre> <!--evita que el navegador cambie el formato de un texto-->
             <p>
@@ -36,7 +39,7 @@
         <br> <!--crea un salto de linea-->
         <hr> <!--crea una lina horizontal-->
     </div>    
-    <div class="areaDeTablas">
+    <div class="areaDeTablas" id="segundo"> <!--este elemento tiene una identificacion (id)-->
         <table> <!--crea una tabla -->
             <colgroup> <!--establece un grupo de modificadores de columnas-->
                 <col span="1" style="background-color:#f00;"> <!--modifica una columna-->
@@ -66,7 +69,7 @@
          </table>
           <hr>
     </div>
-    <div class="areaDeListas">
+    <div class="areaDeListas" id="tercero">
          <ul> <!--una lista sin orden-->
              <li>cafe</li> <!--un elemento de una lista-->
              <li>limonada</li>
@@ -94,7 +97,7 @@
              <dd>vehiculo motorizado de cuatro ruedas</dd>
           </dl>
     </div>
-    <div class="areaMiscelanea">    
+    <div class="areaMiscelanea" id="ultimo">    
            <hr>
            <a href="">enlace</a> <!--un enlace, clikearlo deberia llevarte a otra pagina-->
            <img src="sonrisa.png" alt=""> <!--muestra una imagen-->
