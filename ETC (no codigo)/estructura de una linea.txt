@@ -1,0 +1,14 @@
+HTML:
+html es un lenguaje basado en etiquetas, la estructura de una es la siguiente:
+  <nombre atributo="valor"> contenido </nombre>
+como pueden ver, una etiqueta tiene un nombre, este puede ser cualquier
+palabra, pero se recomienda solo usar las etiquetas prestablecidas por
+el lenguaje. ademas las etiquetas pueden tener atributo con un valor
+determinado, tanto el atributo como su valor pueden ser cualquier palabra
+o numero, pero solo surtiran efecto si son determinados atributos con
+determinados valores. (mas sobre tipos de etiquetas, atributos y valores
+en "HTML completo/body.html"). finalmente tenemos el contenido, no todas
+las etiquetas tienen contenido, solo las que se cierran, es decir, que
+van de a pares y la segunda etiqueta comienza con un "/", el contenido
+es lo que se muestra en una pagina web.
+CSS:
