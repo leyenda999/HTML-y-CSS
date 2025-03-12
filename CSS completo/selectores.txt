@@ -1,0 +1,10 @@
+los selectores sirven para aplicar estilos a uno o varios elementos en CSS,
+los selectores principales son:
+* => sirve para seleccionar a TODOS los elementos del documento. especificidad minima
+nombreDelElemento => sirve para seleccionar todos los elementos con un nombre especifico.
+    especificidad algo mayor que el selector universal
+clase => sirve para seleccionar a todos los elementos que compartan una clase, especificidad 
+    mayor que el nombre. para indicar que se trata de una clase al inicio hay que colocar un
+    punto, asi: .nombreDeLaClase
+id => sirve para seleccionar al elemento especifico con esa identificacion. especificidad maxima.
+    para indicar un id se debe colocar un '#' al inicio, asi: #id
