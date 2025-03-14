@@ -1,0 +1,17 @@
+#a {color: #f00;} /*cambia el color del texto;d:negro;p:ver "colores.txt"*/
+#b {font-family:Courier;} /*cambia la fuente del texto;d:depende*/
+#c {font-size: 20px;} /*cambia el tamaño del texto;d:depende;p:ver "unidades.txt"*/
+#d {font-weight: bolder;} /*cambia el grosor del texto;d:depende*/
+#e {font-style: italic;} /*cambia el estilo del texto;d:normal;p:[normal,italica]*/
+#f {text-align:end;} /*cambia como esta alineado el texto;d:start;
+p: start:inicio del texto
+   end:final del texto
+   center:centro
+   rigth:derecha del contenedor
+   left:izquierda del contenedor
+   justify:center pero mas cuadrado
+*/
+#g {text-decoration: underline;} /*coloca lineas en el texto;d:none;p:TODO*/
+#h {letter-spacing: 12px;} /*define el espacio entre letras*/
+
+#Pa {line-height: 50px;} /*define la altura entre lineas*/
